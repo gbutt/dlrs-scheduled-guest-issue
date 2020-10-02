@@ -1,0 +1,20 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0">
+    <apex:includeLightning />
+    <div id="container"></div>
+
+    <script>
+        $Lightning.use(
+            "c:dlrsTest",
+            function () {
+                $Lightning.createComponent(
+                    "c:dlrsTestLwc",
+                    {},
+                    "container",
+                    function (cmp) {
+
+                    }
+                );
+            }
+        );
+    </script>
+</apex:page>

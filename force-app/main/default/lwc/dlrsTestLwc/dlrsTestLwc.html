@@ -1,0 +1,17 @@
+<template>
+    <div class="app slds-box slds-align_absolute-center">
+        <form class="slds-grid slds-wrap slds-gutters" onsubmit={handleFormSubmit}>
+            <legend>Create a Contact</legend>
+            <fieldset>
+                <lightning-input type="text" name="firstName" label="First Name" required max-length="64" class="slds-col "></lightning-input>
+                <lightning-input type="text" name="lastName" label="Last Name" required max-length="64" class="slds-col "></lightning-input>
+            </fieldset>
+            <div class="slds-col slds-size_1-of-1 slds-m-top_medium">
+                <button type="submit" class="slds-button slds-button_brand slds-button_stretch" >Submit</button>
+            </div>
+        </form>
+        <div>
+            {message}
+        </div>
+    </div>
+</template>
